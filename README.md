@@ -1,1 +1,1 @@
-- [Information for extension developers](./for-developers.md)
+- <a href="./devs" class="btn btn-blue">Information for extension developers</a>
