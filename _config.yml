@@ -21,6 +21,10 @@ aux_links:
   "Join our Discord":
     - "https://discord.gg/5Hus6fM"
 
+nav_external_links:
+  - title: "Dokka Documentation"
+    url: "https://recloudstream.github.io/cloudstream/html/"
+
 plugins:
   - jekyll-sitemap
 
