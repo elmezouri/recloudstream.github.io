@@ -1,6 +1,6 @@
 remote_theme: pmarsceill/just-the-docs
 color_scheme: dark
-markdown: GFM
+markdown: kramdown
 logo: "https://recloudstream.github.io/resources/icon.png"
 title: "recloudstream"
 url: "https://recloudstream.github.io"
