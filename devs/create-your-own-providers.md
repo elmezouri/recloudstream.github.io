@@ -30,7 +30,7 @@ Scraping the search results is essentially just finding the search item elements
 
 The code for the search then ideally looks something like
 
-```kt
+```kotlin
 // (code for Eja.tv)
 
 override suspend fun search(query: String): List<SearchResponse> {
