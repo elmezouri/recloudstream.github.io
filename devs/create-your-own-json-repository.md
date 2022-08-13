@@ -3,6 +3,7 @@ layout: default
 title: Creating your own JSON repository
 has_children: false
 nav_order: 2
+parent: For extension developers
 ---
 
 # Creating your own JSON repository

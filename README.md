@@ -1,0 +1,1 @@
+- [Informations for extension developers](./for-developers.md)

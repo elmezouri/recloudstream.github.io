@@ -3,15 +3,16 @@ layout: default
 title: Using plugin template
 has_children: false
 nav_order: 1
+parent: For extension developers
 ---
 
 # Using the template
 The easiest way to start developing is to use our [plugin-template](https://github.com/recloudstream/plugin-template) as it sets up the build environment automatically.
- 
-1) [Use our plugin template](https://github.com/recloudstream/plugin-template/generate){: .btn .btn-outline }
+
+1) <a class="btn btn-outline" href="https://github.com/recloudstream/plugin-template/generate" target="_blank">Use our plugin template</a>
 
 2) Select `Include all branches`:
-![Include all branches image](./use-template.png)
+ - ![Include all branches image](./use-template.png)
 
 3) Check if GitHub actions are enabled, by going to: `Settings > Actions > General > Allow all actions and reusable workflows`
 
