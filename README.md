@@ -1,1 +1,1 @@
-- [Informations for extension developers](./for-developers.md)
+- [Information for extension developers](./for-developers.md)
