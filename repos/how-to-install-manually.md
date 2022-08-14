@@ -17,6 +17,6 @@ After obtaining the link, you should open the Cloudstream app, go to `Settings >
 When pasting the link, make sure it doesnt start with `cs.repo`. If it does, remove that. 
 
 <video width="360" height="800" controls muted loop>
-    <source src="manuall-install.webm" type="video/webm">
+    <source src="https://raw.githubusercontent.com/recloudstream/recloudstream.github.io/master/repos/manual-install.webm" type="video/webm">
     Your browser does not support the video tag
 </video>
