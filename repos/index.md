@@ -37,6 +37,7 @@ async function fetchRow(url) {
     const btn = document.createElement("a");
     btn.innerText = "Install";
     btn.classList.add("btn");
+    btn.classList.add("btn-blue");
     btn.href = `https://cs.repo/${url.replace(/^https?:\/\//, "")}`;
     td.appendChild(btn);
     
