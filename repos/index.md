@@ -1,9 +1,13 @@
 ---
 layout: default
 title: List of repositories
-has_children: false
+has_children: true
 nav_order: 2
 ---
+
+# List of repositories
+Here you can find a list of **community maintained** extension repositories. **We are not affiliated with any of them.**.
+You can install any repository, by clicking the <kbd>Install</kbd> button. If that did not work for you, check out [how to install repositories manually](./how-to-install-manually.md).
 
 <div id="main">
 
@@ -36,6 +40,7 @@ async function fetchRow(url) {
     
     const btn = document.createElement("a");
     btn.innerText = "Install";
+    btn.target = "_blank";
     btn.classList.add("btn");
     btn.classList.add("btn-blue");
     btn.href = `https://cs.repo/${url.replace(/^https?:\/\//, "")}`;
