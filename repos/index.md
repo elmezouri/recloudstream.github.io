@@ -24,7 +24,6 @@ function makeTd(text) {
     td.appendChild(
         document.createTextNode(text)
     );
-    td.style.textAlign = 'left';
     return td;
 }
 
@@ -36,14 +35,14 @@ async function fetchRow(url) {
     row.appendChild(makeTd(data.description || "No description provided"));
 
     const td = document.createElement("td");
-    td.style.textAlign = 'center';
+    td.style.display = 'flex';
     
     const btn1 = document.createElement("a");
     btn1.innerText = "Install";
     btn1.target = "_blank";
     btn1.classList.add("btn");
     btn1.classList.add("btn-blue");
-    btn1.href = `https://cs.repo/${url.replace(/^https?:\/\//, "")}`;
+    btn1.href = `https://cs.repo/?${url.replace(/^https?:\/\//, "")}`;
     td.appendChild(btn1);
 
     const btn2 = document.createElement("button");
@@ -74,9 +73,9 @@ async function fetchData() {
     const thead = document.createElement("thead");
     thead.innerHTML = `
     <tr>
-        <th style="text-align: left">Name</th>
-        <th style="text-align: left">Description</th>
-        <th style="text-align: left">Install</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Install</th>
     </tr>
 `;
     table.appendChild(thead);
