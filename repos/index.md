@@ -19,7 +19,7 @@ function makeTd(text) {
     const td = document.createElement("td");
     td.appendChild(
         document.createTextNode(text)
-    )
+    );
     td.style.textAlign = 'left';
     return td;
 }
@@ -51,7 +51,7 @@ async function fetchData() {
         <th style="text-align: left">Description</th>
         <th style="text-align: left">Install</th>
     </tr>
-`
+`;
     table.appendChild(thead);
 
     const tbody = document.createElement("tbody");
