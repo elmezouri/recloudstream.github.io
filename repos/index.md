@@ -38,13 +38,30 @@ async function fetchRow(url) {
     const td = document.createElement("td");
     td.style.textAlign = 'center';
     
-    const btn = document.createElement("a");
-    btn.innerText = "Install";
-    btn.target = "_blank";
-    btn.classList.add("btn");
-    btn.classList.add("btn-blue");
-    btn.href = `https://cs.repo/${url.replace(/^https?:\/\//, "")}`;
-    td.appendChild(btn);
+    const btn1 = document.createElement("a");
+    btn1.innerText = "Install";
+    btn1.target = "_blank";
+    btn1.classList.add("btn");
+    btn1.classList.add("btn-blue");
+    btn1.href = `https://cs.repo/${url.replace(/^https?:\/\//, "")}`;
+    td.appendChild(btn1);
+
+    const btn2 = document.createElement("button");
+    btn2.innerText = "Copy URL";
+    btn2.classList.add("btn");
+    btn2.addEventListener("click", () => {
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(url);
+        } else {
+            var tempInput = document.createElement("input");
+            tempInput.value = url;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+        }
+    });
+    td.appendChild(btn2);
     
     row.appendChild(td);
     return row;
