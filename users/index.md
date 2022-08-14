@@ -52,7 +52,7 @@ Basicaly this app send requests to different websites (also called sources or pr
 
 ### 100% free and no ads!
 
-Cloudstream-3 (also refered to as Cs3) is open-source, that means that anyone can look at the code, their isn't any invasive data collection and anyone can create their own modiifed version
+Cloudstream-3 (also refered to as Cs3) is open-source, that means that anyone can look at the code, their isn't any invasive data collection and anyone can create their own modifed version
 
 This app doesn't contain any ads and is completly free to download, as a result this app doesn't make any money from someone using the app.
 
