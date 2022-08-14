@@ -32,6 +32,7 @@ async function fetchRow(url) {
     row.appendChild(makeTd(data.description || "No description provided"));
 
     const btn = document.createElement("a");
+    btn.innerText = "Install";
     btn.classList.add("btn");
     btn.href = `https://cs.repo/${url.replace(/^https?:\/\//, "")}`;
     row.appendChild(btn);
