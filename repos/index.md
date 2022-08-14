@@ -31,12 +31,16 @@ async function fetchRow(url) {
     row.appendChild(makeTd(data.name || "unnamed"));
     row.appendChild(makeTd(data.description || "No description provided"));
 
+    const td = document.createElement("td");
+    td.style.textAlign = 'center';
+    
     const btn = document.createElement("a");
     btn.innerText = "Install";
     btn.classList.add("btn");
     btn.href = `https://cs.repo/${url.replace(/^https?:\/\//, "")}`;
-    row.appendChild(btn);
-
+    td.appendChild(btn);
+    
+    row.appendChild(td);
     return row;
 }
 
@@ -45,7 +49,7 @@ async function fetchData() {
     
     const table = document.createElement("table");
     const thead = document.createElement("thead");
-    thead.innerHtml = `
+    thead.innerHTML = `
     <tr>
         <th style="text-align: left">Name</th>
         <th style="text-align: left">Description</th>
@@ -64,6 +68,7 @@ async function fetchData() {
     }
     table.appendChild(tbody);
 
+    mainDiv.innerHTML = '';
     mainDiv.classList.add("table-wrapper");
     mainDiv.appendChild(table);
 }
