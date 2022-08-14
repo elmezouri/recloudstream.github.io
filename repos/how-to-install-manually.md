@@ -1,7 +1,8 @@
 ---
 layout: default
 title: How to install manually
-has_children: true
+has_children: false
+parent: List of repositories
 nav_order: 1
 ---
 
