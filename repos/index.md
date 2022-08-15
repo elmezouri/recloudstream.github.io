@@ -24,11 +24,14 @@ function makeTd(text) {
     td.appendChild(
         document.createTextNode(text)
     );
+    td.style.textAlign = 'center';
     return td;
 }
 
 async function fetchRow(url) {
-    const r = await fetch(url);
+    const urlObj = new URL(url);
+    urlObj.searchParams.append("v", Date.now());
+    const r = await fetch(urlObj.toString());
     const data = await r.json();
     const row = document.createElement("tr");
     row.appendChild(makeTd(data.name || "unnamed"));
@@ -36,6 +39,7 @@ async function fetchRow(url) {
 
     const td = document.createElement("td");
     td.style.display = 'flex';
+    td.style.justifyContent = 'center';
     
     const btn1 = document.createElement("a");
     btn1.innerText = "Install";
@@ -60,6 +64,7 @@ async function fetchRow(url) {
             document.body.removeChild(tempInput);
         }
     });
+    btn2.style.marginLeft = '1em';
     td.appendChild(btn2);
     
     row.appendChild(td);
@@ -81,7 +86,7 @@ async function fetchData() {
     table.appendChild(thead);
 
     const tbody = document.createElement("tbody");
-    const r = await fetch("https://raw.githubusercontent.com/recloudstream/cs-repos/master/repos-db.json");
+    const r = await fetch(`https://raw.githubusercontent.com/recloudstream/cs-repos/master/repos-db.json?v=${Date.now()}`);
     const data = await r.json();
 
     for (const repo of data) {
