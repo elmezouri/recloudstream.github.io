@@ -12,17 +12,17 @@ parent: For extension developers
 
 Providers in CloudStream consists primarily of 4 different parts:
 
-- [Searching](https://recloudstream.github.io/cloudstream/html/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#498495168%2FFunctions%2F492899073)
-- [Loading the home page](https://recloudstream.github.io/cloudstream/html/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#1356482668%2FFunctions%2F492899073)
-- [Loading the show page](https://recloudstream.github.io/cloudstream/html/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#1671784382%2FFunctions%2F492899073)
-- [Loading the video links](https://recloudstream.github.io/cloudstream/html/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#-930139416%2FFunctions%2F492899073)
+- [Searching](/dokka/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#498495168%2FFunctions%2F492899073)
+- [Loading the home page](/dokka/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#1356482668%2FFunctions%2F492899073)
+- [Loading the show page](/dokka/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#1671784382%2FFunctions%2F492899073)
+- [Loading the video links](/dokka/app/com.lagradost.cloudstream3/-main-a-p-i/index.html#-930139416%2FFunctions%2F492899073)
 
 When making a provider it is important that you are confident you can scrape the video links first!
 Video links are often the most protected part of the website and if you cannot scrape them then the provider is useless.
 
 ## 1. Searching
 
-This one is probably the easiest, based on a query you should return a list of [SearchResponse](https://recloudstream.github.io/cloudstream/html/app/com.lagradost.cloudstream3/-search-response/index.html)
+This one is probably the easiest, based on a query you should return a list of [SearchResponse](/dokka/app/com.lagradost.cloudstream3/-search-response/index.html)
 
 Scraping the search results is essentially just finding the search item elements on the site (red box) and looking in them to find name, url and poster url and put the data in a SearchResponse.
 

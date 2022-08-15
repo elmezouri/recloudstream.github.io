@@ -26,7 +26,7 @@ aux_links:
 
 nav_external_links:
   - title: "Dokka Documentation"
-    url: "https://recloudstream.github.io/cloudstream/html/"
+    url: "/dokka/"
 
 plugins:
   - jekyll-sitemap
