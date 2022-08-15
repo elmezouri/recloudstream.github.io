@@ -21,8 +21,8 @@ It is the responsibility of user to avoid any actions that might violate the law
 ### What are the risks in practice?
 Basically none. The content is hosted by the "providers", and if you don't distribute the content yourself, you are pretty much safe
 
-A lot of misleading articles online try to scare people into buying a vpn subscription when the authors are earning a big commission (sometimes 100% of the vpn subscription).
-VPN are useful for certain things but aren't a magical tool and most people don't need those
+A lot of misleading articles online try to scare people into buying a VPN subscription when the authors are earning a big commission (sometimes 100% of the VPN subscription).
+VPNs are useful for certain things but aren't a magical tool and most people don't need those
 
 ## Features
 
@@ -36,11 +36,11 @@ You can download media (movies, series and animes) files anywhere on your phone 
 
 ### Searching
 
-When you search for a media, cloudstream will search every provider to see if it has that media or not.
+When you search for a media, Cloudstream will search every provider to see if it has that media or not.
 
 You can change the list of used providers with the settings button in the search page
 
-You can also enable foreign languages providers (such as french) under:
+You can also enable foreign languages providers (such as French) under:
 
 Settings page > Provider Languages
 
@@ -64,7 +64,7 @@ But you can still help it's developement:
 - By donating money to dependencies of the project (requires money) *The devs of Cloudstream-3 don't accept donations*
 
 ## Availability
-You can download this app on android, android TV and FireTV Stick it is unfortunately not avalaible on ios or on desktop, but you can use tools like:
+You can download this app on Android, Android TV and FireTV Stick it is unfortunately not avalaible on IOS or on desktop, but you can use tools like:
 - [WSA](https://docs.microsoft.com/en-us/windows/android/wsa/) on Windows
 - [Waydroid](https://waydro.id/) or [Anbox](https://anbox.io/) on Linux
 
